@@ -7,7 +7,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake;${CMAKE_MODULE_PATH}")
 include(spdlog)
 include(googletest)
 
-add_executable(gtest_integrate main.cpp)
+add_executable(gtest_integrate src/main.cpp src/most_water.cpp)
 
 target_include_directories(gtest_integrate PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
