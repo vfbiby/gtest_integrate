@@ -17,3 +17,4 @@ set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 set(BUILD_GTEST ON CACHE BOOL "" FORCE)
 
 target_link_libraries(gtest_integrate PRIVATE spdlog::spdlog)
+target_link_libraries(gtest_integrate PRIVATE gtest_main)

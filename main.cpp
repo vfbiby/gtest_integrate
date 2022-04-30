@@ -1,8 +1,7 @@
 #include <iostream>
-#include "spdlog/spdlog.h"
+#include "gtest/gtest.h"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    spdlog::info("Welcome to spdlog!");
-    return 0;
+TEST(HelloTest, BasicAssertions) {
+    EXPECT_STRNE("hello", "world");
+    EXPECT_EQ(7 * 6, 42);
 }
